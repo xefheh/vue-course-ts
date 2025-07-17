@@ -1,4 +1,4 @@
-import { API_ROUTES, http } from '@/api'
+import { API_ROUTES, client } from '@/api'
 import type Meditation from '@/interfaces/meditations'
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
@@ -9,7 +9,7 @@ export const useMeditationStore = defineStore('meditation', () => {
   async function getMeditations() {
     type MeditationWithIncorrectField = Meditation & { duration_min?: number }
 
-    const { data } = await http.get<{
+    const { data } = await client().get<{
       data: { meditations: MeditationWithIncorrectField[] }
     }>(API_ROUTES.GET_MEDITATIONS_URL)
 

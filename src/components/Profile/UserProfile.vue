@@ -14,7 +14,7 @@ const store = useProfileStore()
       width="129px"
       height="129px"
     />
-    <h1 class="welcome">Добро пожаловать, {{ store.profile.name }}!</h1>
+    <h1 class="welcome">Добро пожаловать, {{ store.profile?.name }}!</h1>
     <p class="meeting">Как вы себя сегодня чувствуете?</p>
     <StatePicker />
   </div>
