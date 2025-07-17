@@ -4,6 +4,19 @@ import MenuItem from './MenuItem.vue'
 import MeditationNavIcon from '@/icons/MeditationNavIcon.vue'
 import StatisticsNavIcon from '@/icons/StatisticsNavIcon.vue'
 import ExitNavIcon from '@/icons/ExitNavIcon.vue'
+import { useAuthStore } from '@/stores/auth.store'
+import { useRouter } from 'vue-router'
+
+const store = useAuthStore()
+const router = useRouter()
+
+const logout = () => {
+  store.clearToken()
+
+  router.push({
+    name: 'auth',
+  })
+}
 </script>
 
 <template>
@@ -24,12 +37,14 @@ import ExitNavIcon from '@/icons/ExitNavIcon.vue'
         Статистика</MenuItem
       >
       <div class="separator"></div>
-      <MenuItem to="/exit">
-        <template #navIcon>
-          <ExitNavIcon />
-        </template>
-        Выход</MenuItem
-      >
+      <span @click="logout">
+        <MenuItem to="/">
+          <template #navIcon>
+            <ExitNavIcon />
+          </template>
+          Выход</MenuItem
+        >
+      </span>
     </nav>
   </header>
 </template>
