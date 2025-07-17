@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MeditationCollection from './components/MeditationCollection/MeditationCollection.vue'
+</script>
 
 <template>
-  <main></main>
+  <MeditationCollection />
 </template>
 
 <style scoped></style>
