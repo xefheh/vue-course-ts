@@ -3,7 +3,7 @@ import type Meditation from '@/interfaces/meditations'
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export const useMeditaionStore = defineStore('meditation', () => {
+export const useMeditationStore = defineStore('meditation', () => {
   const meditations = ref<Meditation[]>()
 
   async function getMeditations() {

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useMeditaionStore } from '@/stores/meditationStore'
+import { useMeditationStore } from '@/stores/meditationStore'
 import { onMounted } from 'vue'
 import MeditationItem from './MeditationItem.vue'
-const store = useMeditaionStore()
+const store = useMeditationStore()
 
 onMounted(() => {
   store.getMeditations()
