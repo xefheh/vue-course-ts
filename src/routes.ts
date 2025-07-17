@@ -12,7 +12,7 @@ export const router = createRouter({
         },
         {
           path: 'statistics',
-          component: import('./components/MeditationCollection/MeditationCollection.vue'),
+          component: () => import('./pages/StatisticsPage.vue'),
         },
       ],
     },
