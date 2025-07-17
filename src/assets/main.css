@@ -1,0 +1,9 @@
+:root {
+  --color-primary: #ffffff;
+  --color-bg: #253334;
+  --color-bg-inverted: #202728;
+  --color-button-light: #7c9a92;
+
+  --font-primary: 'Alegreya', serif;
+  --font-secondary: 'Alegreya Sans', sans-serif;
+}
