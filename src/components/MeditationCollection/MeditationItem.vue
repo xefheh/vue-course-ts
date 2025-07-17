@@ -61,10 +61,10 @@ const { title, description, durationMin } = defineProps<Meditation>()
   display: flex;
   flex-direction: column;
 
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 120px;
-  max-height: 120px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 110px;
+  max-height: 110px;
 
   border-radius: 20px;
 
