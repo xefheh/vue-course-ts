@@ -12,7 +12,6 @@ import UserProfile from '@/components/Profile/UserProfile.vue'
       <MeditationCollection class="meditation" />
     </div>
   </main>
-  <footer>Я футер!</footer>
 </template>
 
 <style scoped>
