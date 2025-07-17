@@ -7,10 +7,6 @@ export const router = createRouter({
       component: () => import('./pages/MainPage.vue'),
       children: [
         {
-          path: '/',
-          component: () => import('./pages/MeditationPage.vue'),
-        },
-        {
           path: 'statistics',
           component: () => import('./pages/StatisticsPage.vue'),
         },
