@@ -9,7 +9,7 @@ const store = useProfileStore()
   <div class="userProfile">
     <img
       class="userProfile__photo"
-      src="../../assets/image.png"
+      src="./image.png"
       alt="Фото профиля"
       width="129px"
       height="129px"
