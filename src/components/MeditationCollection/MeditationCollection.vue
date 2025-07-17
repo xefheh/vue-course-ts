@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useMeditationStore } from '@/stores/meditationStore'
+import { useMeditationStore } from '@/stores/meditation.store'
 import { onMounted } from 'vue'
 import MeditationItem from './MeditationItem.vue'
 const store = useMeditationStore()
@@ -20,7 +20,7 @@ onMounted(() => {
 <style scoped>
 .meditationContainer {
   display: grid;
-  gap: 40px;
+  gap: 35px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
