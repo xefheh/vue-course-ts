@@ -3,7 +3,13 @@
   --color-bg: #253334;
   --color-bg-inverted: #202728;
   --color-button-light: #7c9a92;
+  --color-bg-meditation: #f7f3f0;
 
   --font-primary: 'Alegreya', serif;
   --font-secondary: 'Alegreya Sans', sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  font-family: var(--font-primary);
 }
